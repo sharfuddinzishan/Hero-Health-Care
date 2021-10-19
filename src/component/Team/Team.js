@@ -5,24 +5,24 @@ const Team = (props) => {
     const { thumbImage: thumbPic } = picture || {}
     const { mobile, email, socialLink: { facebook, twitter, linkedin } } = contact || {}
     return (
-        <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-                <div class="pic"><img src={thumbPic} class="img-fluid" alt={name || "No Profile Picture Available"} /></div>
-                <div class="member-info">
+        <div className="col-lg-6">
+            <div className="member d-flex align-items-start">
+                <div className="pic"><img src={thumbPic} className="img-fluid" alt={name || "No Profile Picture Available"} /></div>
+                <div className="member-info">
                     <h4>{name}</h4>
                     <span>{role}</span>
-                    <div class="social">
+                    <div className="social">
                         {
-                            twitter && <a class="text-decoration-none" href="" target="_blank">
-                                <i class='bx bxl-twitter bx-tada'></i></a>
+                            twitter && <a className="text-decoration-none" href="" target="_blank">
+                                <i className='bx bxl-twitter bx-tada'></i></a>
                         }
                         {
-                            facebook && <a class="text-decoration-none" href="" target="_blank">
-                                <i class='bx bxl-facebook-circle bx-tada'></i></a>
+                            facebook && <a className="text-decoration-none" href="" target="_blank">
+                                <i className='bx bxl-facebook-circle bx-tada'></i></a>
                         }
                         {
-                            linkedin && <a class="text-decoration-none" href="" target="_blank">
-                                <i class='bx bxl-linkedin bx-tada'></i></a>}
+                            linkedin && <a className="text-decoration-none" href="" target="_blank">
+                                <i className='bx bxl-linkedin bx-tada'></i></a>}
                     </div>
                 </div>
             </div>

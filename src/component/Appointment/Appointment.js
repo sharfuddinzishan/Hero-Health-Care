@@ -3,36 +3,36 @@ import React from 'react';
 const Appointment = () => {
     return (
         <>
-            <section class="appointment-section p-5">
-                <div class="container">
-                    <h2 class="section-title lh-1 fs-1 pb-3 fw-normal text-center">Make an <b>Appointment</b> To Get Service</h2>
-                    <form action="" method="" role="form" class="">
-                        <div class="row">
-                            <div class="col-md-4 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+            <section className="appointment-section p-5">
+                <div className="container">
+                    <h2 className="section-title lh-1 fs-1 pb-3 fw-normal text-center">Make an <b>Appointment</b> To Get Service</h2>
+                    <form action="" method="" role="form" className="">
+                        <div className="row">
+                            <div className="col-md-4 form-group">
+                                <input type="text" name="name" className="form-control" id="name" placeholder="Your Name"
                                     data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
+                                <div className="validate"></div>
                             </div>
-                            <div class="col-md-4 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                            <div className="col-md-4 form-group mt-3 mt-md-0">
+                                <input type="email" className="form-control" name="email" id="email" placeholder="Your Email"
                                     data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validate"></div>
+                                <div className="validate"></div>
                             </div>
-                            <div class="col-md-4 form-group mt-3 mt-md-0">
-                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                            <div className="col-md-4 form-group mt-3 mt-md-0">
+                                <input type="tel" className="form-control" name="phone" id="phone" placeholder="Your Phone"
                                     data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
+                                <div className="validate"></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 form-group mt-3">
-                                <input type="datetime" name="date" class="form-control datepicker" id="date"
+                        <div className="row">
+                            <div className="col-md-4 form-group mt-3">
+                                <input type="datetime" name="date" className="form-control datepicker" id="date"
                                     placeholder="Appointment Date" data-rule="minlen:4"
                                     data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
+                                <div className="validate"></div>
                             </div>
-                            <div class="col-md-4 form-group mt-3">
-                                <select name="department" id="department" class="form-select">
+                            <div className="col-md-4 form-group mt-3">
+                                <select name="department" id="department" className="form-select">
                                     <option value="">Select Services</option>
                                     <option value="service1">Oxygen</option>
                                     <option value="service2">Nursing for Home</option>
@@ -42,18 +42,18 @@ const Appointment = () => {
                                     <option value="service4">Acne</option>
                                     <option value="service4">Others</option>
                                 </select>
-                                <div class="validate"></div>
+                                <div className="validate"></div>
                             </div>
                         </div>
 
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-                            <div class="validate"></div>
+                        <div className="form-group mt-3">
+                            <textarea className="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+                            <div className="validate"></div>
                         </div>
-                        <button class="mt-3 d-block mx-auto btn btn-lg btn-outline-secondary" type="submit">Request Service</button>
+                        <button className="mt-3 d-block mx-auto btn btn-lg btn-outline-secondary" type="submit">Request Service</button>
                     </form>
 
-                    <div class="mx-auto p-5">
+                    <div className="mx-auto p-5">
                         <p><strong>What do you need ?</strong></p>
 
                         <ul>

@@ -8,12 +8,12 @@ const Doctors = () => {
 
     return (
         <>
-            <section class="doctors p-5">
-                <div class="container">
-                    <div class="p-3">
-                        <h3 class="section-title lh-1 fs-1 pb-3 fw-normal text-center">Our <b>Doctors</b></h3>
+            <section className="doctors p-5">
+                <div className="container">
+                    <div className="p-3">
+                        <h3 className="section-title lh-1 fs-1 pb-3 fw-normal text-center">Our <b>Doctors</b></h3>
                     </div>
-                    <div class="row">
+                    <div className="row">
                         {
                             teams?.map(team => <Team key={team.id} team={team}></Team>)
                         }

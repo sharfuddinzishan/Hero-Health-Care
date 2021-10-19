@@ -7,15 +7,15 @@ const Services = () => {
     const [services] = useServices();
     return (
         <>
-            <section class="services-section">
-                <div class="container">
-                    <div class="p-5">
-                        <h2 class="section-title lh-1 fs-1 pb-3 fw-normal text-center">Emergency <b>Health Service</b></h2>
-                        <h1 class="section-title lh-1 fs-2 pb-3 fw-bold text-center text-uppercase">
+            <section className="services-section">
+                <div className="container">
+                    <div className="p-5">
+                        <h2 className="section-title lh-1 fs-1 pb-3 fw-normal text-center">Emergency <b>Health Service</b></h2>
+                        <h1 className="section-title lh-1 fs-2 pb-3 fw-bold text-center text-uppercase">
                             Fast, Easy and Reliable
                         </h1>
                     </div>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
+                    <div className="row row-cols-1 row-cols-md-3 g-4 pb-5">
                         {
                             services.map(service => <Service key={service._id} service={service}></Service>)
                         }
