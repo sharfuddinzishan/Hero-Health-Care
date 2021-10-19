@@ -1,39 +1,69 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './component/Header/Header';
-import Banner from './component/Banner/Banner';
 import Services from './component/Services/Services';
-import Doctors from './component/Doctors/Doctors';
-import About from './component/About/About';
 import NotFound from './component/NotFound/NotFound';
-import Contact from './component/Contact/Contact';
-import FAQ from './component/FAQ/FAQ';
-import Appointment from './component/Appointment/Appointment';
-import Treatment from './component/Treatment/Treatment';
-import Review from './component/Review/Review';
-import Statistics from './component/Statistics/Statistics';
-import OurSolutions from './component/OurSolution/OurSolutions';
 import Footer from './component/Footer/Footer';
+import Login from './component/Login/Login';
+import Register from './component/Register/Register';
+import Home from './component/Home/Home';
+import Doctors from './component/Doctors/Doctors';
+import AuthProvider from './context/AuthProvider';
+import Account from './component/Account/Account';
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Banner></Banner>
-      <Services></Services>
-      <Doctors></Doctors>
-      <About></About>
-      <NotFound></NotFound>
-      <Contact></Contact>
-      <FAQ></FAQ>
-      <Appointment></Appointment>
-      <Treatment></Treatment>
-      <Review></Review>
-      <Statistics></Statistics>
-      <OurSolutions></OurSolutions>
-      <Footer></Footer>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/account">
+              <Account></Account>
+            </Route>
+
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/doctors">
+              <Doctors></Doctors>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }
 
 export default App;
+
+      // <Header></Header>
+      // <Banner></Banner>
+      // <Services></Services>
+      // <Doctors></Doctors>
+      // <About></About>
+      // <NotFound></NotFound>
+      // <Contact></Contact>
+      // <FAQ></FAQ>
+      // <Appointment></Appointment>
+      // <Treatment></Treatment>
+      // <Review></Review>
+      // <Statistics></Statistics>
+      // <OurSolutions></OurSolutions>
+      // <Footer></Footer>

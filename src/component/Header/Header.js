@@ -1,10 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import './Header.css'
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <>
             <header>
-                <nav class="navbar navbar-expand-lg fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
+                <nav class="navbar navbar-expand-lg" data-navbar-on-scroll="data-navbar-on-scroll">
                     <div class="container">
                         <a class="navbar-brand" href="#">
                             <img className="img-fluid h-25 w-25" src="https://i.ibb.co/HnBMB8F/hhc-logo.png" alt="" />
@@ -41,12 +44,66 @@ const Header = () => {
                                 </li>
                             </ul>
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sign In</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link btn btn-outline-secondary" href="#">Register</a>
-                                </li>
+                                {
+                                    !user?.email &&
+                                    <>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link"
+                                                to="/account"
+                                                activeStyle={{
+                                                    fontWeight: "bold",
+                                                    color: "#636"
+                                                }}>
+                                                User Account
+                                            </NavLink>
+                                        </li>
+                                        {/* <li className="nav-item">
+                                            <NavLink className="nav-link"
+                                                to="/login"
+                                                activeStyle={{
+                                                    fontWeight: "bold",
+                                                    color: "#636"
+                                                }}>
+                                                Login
+                                            </NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link"
+                                                to="/register"
+                                                activeStyle={{
+                                                    fontWeight: "bold",
+                                                    color: "#636"
+                                                }}>
+                                                Register
+                                            </NavLink>
+                                        </li> */}
+                                    </>
+                                }
+                                {
+                                    user?.email ?
+                                        <>
+                                            <li className="nav-item">
+                                                <NavLink className="nav-link"
+                                                    to="/appointment"
+                                                    activeStyle={{
+                                                        fontWeight: "bold",
+                                                        color: "#636"
+                                                    }}>
+                                                    Appointment
+                                                </NavLink>
+                                            </li>
+                                            <li className="nav-item">
+                                                <NavLink onClick={logOut} className="nav-link"
+                                                    to="/home"
+                                                    activeStyle={{
+                                                        fontWeight: "bold",
+                                                        color: "#636"
+                                                    }}>
+                                                    LogOut
+                                                </NavLink>
+                                            </li>
+                                        </> : ''
+                                }
                             </ul>
                         </div>
                     </div>
