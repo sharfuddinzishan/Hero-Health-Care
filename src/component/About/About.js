@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css'
 const About = () => {
     return (
@@ -8,7 +9,7 @@ const About = () => {
                     <div class="p-3">
                         <h2 class="section-title lh-1 fs-1 pb-3 fw-normal text-center">About <b>Us</b></h2>
                         <h1 class="section-title lh-1 fs-1 pb-3 fw-bold text-center">
-                            We enable patients to connect with NHS clinicians
+                            We enable patients to connect with BD clinicians
                         </h1>
                         <p class="text-muted fs-6 text-center">
                             At Virtually, we trully believe that all individuals should have the tools to flexibly manage their
@@ -38,18 +39,17 @@ const About = () => {
                             </li>
 
                         </ul>
-                        <button class="my-1 d-block mx-auto animated zoomIn delay-1s btn btn-lg btn-outline-secondary">
-                            Register
-                        </button>
+                        <Link to="account" className="text-decoration-none">
+                            <button class=" y-1 d-block mx-auto animated zoomIn delay-1s btn btn-lg btn-outline-secondary">
+                                Register
+                            </button>
+                        </Link>
                     </div>
                     <hr class="my-5" />
                     <div class="row">
                         <div class="col-md-6">
                             <div class="p-3">
                                 <h2 class="section-title lh-1 fs-1 pb-3 fw-normal">Who <b>We Are</b></h2>
-                                <h1 class="section-title lh-1 fs-1 pb-3 fw-bold">
-                                    We are an NHS GP Practice
-                                </h1>
                                 <p class="text-muted fs-6 text-start">
                                     We provide care for about 15,000 patients living across London of all age groups with a
                                     variety of health conditions.Some of our patients have multiple and complex health
@@ -124,7 +124,7 @@ const About = () => {
                                 <h4 class="lh-lg mt-1">Our Vibe</h4>
                                 <p class="fs-6 text-muted">
                                     <small>
-                                        At Meira Care, we dream it, and then do it.Every day, we are inventing what is
+                                        Every day, we are inventing what is
                                         possible.We make connections.We solve problems.We serve as a partner that patients
                                         can trust.
                                     </small>

@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
+import { useServices } from './../../Hooks/useServices';
+import Service from '../Service/Service';
 const Services = () => {
+    const [services] = useServices();
     return (
         <>
             <section class="services-section">
@@ -11,55 +15,10 @@ const Services = () => {
                             Fast, Easy and Reliable
                         </h1>
                     </div>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="https://bd.care/public/uploads/service_photo/1563095624_5d2af24872634.jpeg"
-                                    class="card-img-top img-fluid w-50" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Order Ambulance</h5>
-                                    <p class="card-text fs-6">
-                                        To confirm an ambulance booking, please fill up the e-form.We will get
-                                        back soon to you.
-                                    </p>
-                                </div>
-                                <div class="card-footer border-0 bg-white text-end">
-                                    <button class="btn btn-sm btn-outline-info text-secondary rounded-pill">Book Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="https://bd.care/public/uploads/service_photo/1563098680_5d2afe38e128c.jpeg"
-                                    class="card-img-top img-fluid w-50" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Home Sample Collection</h5>
-                                    <p class="card-text fs-6">
-                                        We do home sample collection for any lab tests other than COVID-19. No need to come to
-                                        hospital to get tests done
-                                    </p>
-                                </div>
-                                <div class="card-footer border-0 bg-white text-end">
-                                    <button class="btn btn-sm btn-outline-info text-secondary rounded-pill">Book Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="https://bd.care/public/uploads/service_photo/1563098625_5d2afe010541c.jpeg"
-                                    class="card-img-top img-fluid w-50" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Nursing for Home</h5>
-                                    <p class="card-text fs-6">
-                                        Our home service is ideal for patients who need long-term health care for complex
-                                        medical problems and daily needs.
-                                    </p>
-                                </div>
-                                <div class="card-footer border-0 bg-white text-end">
-                                    <button class="btn btn-sm btn-outline-info text-secondary rounded-pill">Book Now</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
+                        {
+                            services.map(service => <Service key={service._id} service={service}></Service>)
+                        }
                     </div>
                 </div>
             </section>

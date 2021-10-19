@@ -1,0 +1,187 @@
+{
+   "Company":{
+      "name":"Hero Health Care",
+      "year_of":"2018",
+      "slogans":[
+         "Virtual Care for All"
+      ],
+      "contact":{
+         "location_text":"S. Alam Center (3th floor 48 GEC C/A, Chittagong, 4100",
+         "contact_email":[
+            "info@hero-healthcare.com"
+         ],
+         "mobile":[
+            "(025) 805-0116"
+         ],
+         "socialLink":{
+            "facebook":"https://www.facebook.com/hhcare/",
+            "linkedin":"https://www.linkedin.com/company/hhcare",
+            "twitter":"http://twitter.com/hhcare"
+         }
+      }
+   },
+   "Team":[
+      {
+         "id":"100",
+         "name":"Marguerite Mckay",
+         "year_of_experience":11,
+         "age":40,
+         "gender":"female",
+         "role":"Chief Medical Officer",
+         "contact":{
+            "mobile":[
+               "+1 (813) 485-2951"
+            ],
+            "email":[
+               "margueritemckay@comcubine.com"
+            ],
+            "socialLink":{
+               "facebook":"http://www.facebook.com/margueritemckay",
+               "linkedin":"http://www.linkedin.com/in/margueritemckay",
+               "twitter":"http://www.twitter.com/margueritemckay"
+            }
+         },
+         "picture":{
+            "fullImage":"https://i.im.ge/2021/10/04/TviwRW.jpg",
+            "thumbImage":"https://i.im.ge/2021/10/04/TviwRW.th.jpg"
+         }
+      },
+      {
+         "id":"101",
+         "name":"Gamble Simpson",
+         "year_of_experience":14,
+         "age":44,
+         "gender":"male",
+         "role":"Anesthesiologist",
+         "contact":{
+            "mobile":[
+               "+1 (841) 528-2341"
+            ],
+            "email":[
+               "gamblesimpson@comcubine.com"
+            ],
+            "socialLink":{
+               "facebook":"http://www.facebook.com/gamblesimpson",
+               "linkedin":"http://www.linkedin.com/in/gamblesimpson",
+               "twitter":"http://www.twitter.com/gamblesimpson"
+            }
+         },
+         "picture":{
+            "fullImage":"https://i.im.ge/2021/10/04/Tvi0t1.jpg",
+            "thumbImage":"https://i.im.ge/2021/10/04/Tvi0t1.th.jpg"
+         }
+      },
+      {
+         "id":"102",
+         "name":"Ursula Delaney",
+         "year_of_experience":7,
+         "age":35,
+         "gender":"male",
+         "role":"Neurosurgeon",
+         "contact":{
+            "mobile":[
+               "+1 (841) 528-2344"
+            ],
+            "email":[
+               "ursuladelaney@comcubine.com"
+            ],
+            "socialLink":{
+               "facebook":"http://www.facebook.com/ursuladelaney",
+               "linkedin":"http://www.linkedin.com/in/ursuladelaney",
+               "twitter":"http://www.twitter.com/ursuladelaney"
+            }
+         },
+         "picture":{
+            "fullImage":"https://i.im.ge/2021/10/04/TviiqP.jpg",
+            "thumbImage":"https://i.im.ge/2021/10/04/TviiqP.th.jpg"
+         }
+      },
+      {
+         "id":"103",
+         "name":"Ursula Delaney",
+         "year_of_experience":7,
+         "age":40,
+         "gender":"female",
+         "role":"Consultant",
+         "contact":{
+            "mobile":[
+               "+1 (841) 528-2344"
+            ],
+            "email":[
+               "ursuladelaney@comcubine.com"
+            ],
+            "socialLink":{
+               "facebook":"http://www.facebook.com/ursuladelaney",
+               "linkedin":"http://www.linkedin.com/in/ursuladelaney",
+               "twitter":"http://www.twitter.com/ursuladelaney"
+            }
+         },
+         "picture":{
+            "fullImage":"https://i.im.ge/2021/10/04/Tvit3c.jpg",
+            "thumbImage":"https://i.im.ge/2021/10/04/Tvit3c.th.jpg"
+         }
+      }
+   ],
+   "Services":[
+      {
+         "_id":1,
+         "service_image":"https://i.ibb.co/RY2W2HJ/1563095624-5d2af24872634.jpg",
+         "title":"Order Ambulance",
+         "info":"To confirm an ambulance booking, please fill up the e-form.We will get back soon to you.",
+         "description":[
+            "Standard Ambulance with Proper equipment",
+            "Stretchers are available to carrying the patient",
+            "Service available to go anywhere in Bangladesh",
+            "Clean & Hygienic Ambulance",
+            "Certified & Skilled Driver"
+         ]
+      },
+      {
+         "_id":2,
+         "service_image":"https://i.ibb.co/Y8j96kD/1563098680-5d2afe38e128c.jpg",
+         "title":"Home Sample Collection",
+         "info":"We do home sample collection for any lab tests other than COVID-19.",
+         "description":[
+            "No need to come to Praava to get tests done, our phlebotomist, wearing PPE, will go and collect samples for testing."
+         ]
+      },
+      {
+         "_id":3,
+         "service_image":"https://i.ibb.co/tbCgkvp/1563098625-5d2afe010541c.jpg",
+         "title":"Nursing for Home",
+         "info":"Our home service is ideal for patients who need long-term health care for complex medical problems and daily needs.",
+         "description":[
+            "Nurse Service at Home - Our home service is ideal for patients who need long-term health care for complex medical problems and daily needs.",
+            "This program aims to help elderly home patients regain their independence through a systematic and loving care plan specifically designed for each senior care."
+         ]
+      },
+      {
+         "_id":4,
+         "service_image":"https://i.ibb.co/4TfLYHN/1563098834-5d2afed238bf9.jpg",
+         "title":"Oxygen for Home",
+         "info":"We provide medical equipment’s and oxygen cylinder rent sell also refill for all client needs.",
+         "description":[
+            "The equipment’s offered by us are very reliable and best price in Bangladesh and well researched. We always carry out a background check on every equipment before using. ",
+            "Furthermore, equipment rental rates can be negotiated based on client budget constraints. We provide more experienced staff members based on the equipment home delivery in Bangladesh."
+         ]
+      },
+      {
+         "_id":5,
+         "service_image":"https://i.ibb.co/9GyvLr8/1563098722-5d2afe62c970f.jpg",
+         "title":"Medicine Supply",
+         "info":"We supply medicine as your requirement. Just send us prescription and fill up the e-form.",
+         "description":[
+            "Want to get necessary medicine without escaping home? We are ready to hear from you."
+         ]
+      },
+      {
+         "_id":6,
+         "service_image":"https://i.ibb.co/qdC9MPm/download.jpg",
+         "title":"BABY CARE AT HOME",
+         "info":" It is the time when a mother recovers from the birth of a child and requires expert attention and care for the baby and mother.",
+         "description":[
+            "A new baby is undoubtedly a very pleasant time for everyone at home. But it's also true that a new mother experiences many physiological & emotional changes, after the birth of a child"
+         ]
+      }
+   ]
+}

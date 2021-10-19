@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Header.css'
 const Header = () => {
@@ -9,9 +9,9 @@ const Header = () => {
             <header>
                 <nav class="navbar navbar-expand-lg" data-navbar-on-scroll="data-navbar-on-scroll">
                     <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img className="img-fluid h-25 w-25" src="https://i.ibb.co/HnBMB8F/hhc-logo.png" alt="" />
-                        </a>
+                        <Link class="navbar-brand" to="/">
+                            <img className="img-fluid h-25 w-25" src="https://i.ibb.co/HnBMB8F/hhc-logo.png" alt="Hero Health Care" />
+                        </Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,10 @@ const Header = () => {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <Link class="nav-link active" to="/">Home</Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <Link class="nav-link" to="/services">Services</Link>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -31,19 +31,17 @@ const Header = () => {
                                         Who We Are
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">About Us</a></li>
-                                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                        <li><Link class="dropdown-item" to="about">About Us</Link></li>
+                                        <li><Link class="dropdown-item" to="contact">Contact Us</Link></li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
-                                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                        <li><Link class="dropdown-item" to="faq">FAQ</Link></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">How It Works</a>
+                                    <Link class="nav-link active" to="/doctors">Doctors</Link>
                                 </li>
-                            </ul>
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 {
                                     !user?.email &&
                                     <>
@@ -57,26 +55,6 @@ const Header = () => {
                                                 User Account
                                             </NavLink>
                                         </li>
-                                        {/* <li className="nav-item">
-                                            <NavLink className="nav-link"
-                                                to="/login"
-                                                activeStyle={{
-                                                    fontWeight: "bold",
-                                                    color: "#636"
-                                                }}>
-                                                Login
-                                            </NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink className="nav-link"
-                                                to="/register"
-                                                activeStyle={{
-                                                    fontWeight: "bold",
-                                                    color: "#636"
-                                                }}>
-                                                Register
-                                            </NavLink>
-                                        </li> */}
                                     </>
                                 }
                                 {
@@ -101,6 +79,11 @@ const Header = () => {
                                                     }}>
                                                     LogOut
                                                 </NavLink>
+                                            </li>
+                                            <li class="nav-item">
+                                                <Link class="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">
+                                                    {user?.displayName ? user.displayName : 'AnonymousUser'}
+                                                </Link>
                                             </li>
                                         </> : ''
                                 }

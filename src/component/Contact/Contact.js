@@ -24,14 +24,14 @@ const Contact = () => {
                                     <i class='bx bx-current-location bx-tada bx-lg'></i>
                                     <div class=" d-flex flex-column">
                                         <h4>Location:</h4>
-                                        <p>A108 Adam Street, New York, NY 535022</p>
+                                        <p>S. Alam Center (3th floor 48 GEC C/A, Chittagong, 4100</p>
                                     </div>
                                 </div>
                                 <div class="email d-flex align-items-center">
                                     <i class='bx bx-envelope bx-tada bx-lg'></i>
                                     <div class="d-flex flex-column">
                                         <h4>Email:</h4>
-                                        <p>info@example.com</p>
+                                        <p>info@hero-healthcare.com</p>
                                     </div>
                                 </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
                                     <i class='bx bx-phone bx-tada bx-lg'></i>
                                     <div class="d-flex flex-column">
                                         <h4>Call:</h4>
-                                        <p>+1 5589 55488 55s</p>
+                                        <p>(025) 805-0116</p>
                                     </div>
                                 </div>
 

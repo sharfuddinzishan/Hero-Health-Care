@@ -8,9 +8,8 @@ const OurSolutions = () => {
                     <h5 class="section-title lh-1 fs-1 py-3 fw-normal text-center">
                         Our&nbsp;<b>Solutions</b>
                     </h5>
-                    <p class="py-1 w-75 mx-auto text-center text-muted fs-6">Teladoc Health is the world’s only integrated
-                        virtual care
-                        system for delivering, enabling
+                    <p class="py-1 w-75 mx-auto text-center text-muted fs-6">Hero Health Care (HHC) is the world’s only integrated
+                        virtual care system for delivering, enabling
                         and empowering whole-person health—from wellness and prevention to acute care to complex
                         healthcare needs.
                     </p>

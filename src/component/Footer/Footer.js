@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                                <a href="https://meiracare.com" class="d-inline-block mb-5">
+                                <a href="/" target="_blank" class="d-inline-block mb-5">
                                     <img src="https://i.ibb.co/HnBMB8F/hhc-logo.png"
                                         class="img-fluid" alt="footer-logo" width="220" />
                                 </a>
@@ -33,12 +34,12 @@ const Footer = () => {
                                 </div>
                                 <div class="d-flex align-items-center justify-content-around justify-content-lg-none mb-3">
                                     <a class="me-2"
-                                        href="https://apps.apple.com/ca/app/meira-care-virtual-clinic/id1549037621#?platform=iphone"
+                                        href="/"
                                         target="_blank">
                                         <img src="https://meiracare.com/template/assets/images/app-store.webp"
                                             alt="App Store Download" width="100" />
                                     </a>
-                                    <a href="https://play.google.com/store/apps/details?id=com.meiracare.app" target="_blank">
+                                    <a href="/" target="_blank">
                                         <img src="https://meiracare.com/template/assets/images/google-play.webp"
                                             alt="Google Play Store Download" width="100" />
                                     </a>
@@ -48,66 +49,72 @@ const Footer = () => {
                                 <h4 class="text-light mb-4 fw-normal">Quick Links</h4>
                                 <ul class="list-unstyled bx-ul">
                                     <li class="mb-2">
-                                        <a class="text-decoration-none text-light fs-6"
-                                            href="https://meiracare.com/how-it-works">
+                                        <Link class="text-decoration-none text-light fs-6"
+                                            to="/contact">
                                             <i class='bx bx-right-arrow bx-spin'></i>
-                                            How It Works
-                                        </a>
+                                            Contact
+                                        </Link>
                                     </li>
                                     <li class="mb-2">
-                                        <a class="text-decoration-none text-light fs-6"
-                                            href="https://meiracare.com/book-doctor-appointment-online">
+                                        <Link class="text-decoration-none text-light fs-6"
+                                            to="/appointment">
                                             <i class='bx bx-right-arrow bx-spin'></i>
                                             Book Online Appointment
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li class="mb-2">
-                                        <a class="text-decoration-none text-light fs-6"
-                                            href="https://meiracare.com/medication-prescription-refill-online">
+                                        <Link class="text-decoration-none text-light fs-6"
+                                            to="/about">
                                             <i class='bx bx-right-arrow bx-spin'></i>
-                                            Online Prescriptions &amp; Refills
-                                        </a>
+                                            About US
+                                        </Link>
                                     </li>
                                     <li class="mb-2">
-                                        <a class="text-decoration-none text-light fs-6"
-                                            href="https://meiracare.com/lab-results-requisitions-online">
+                                        <Link class="text-decoration-none text-light fs-6"
+                                            to="/faq">
                                             <i class='bx bx-right-arrow bx-spin'></i>
-                                            Lab Results &amp; Requisitions
-                                        </a>
+                                            FAQ
+                                        </Link>
                                     </li>
-
+                                    <li class="mb-2">
+                                        <Link class="text-decoration-none text-light fs-6"
+                                            to="/doctors">
+                                            <i class='bx bx-right-arrow bx-spin'></i>
+                                            Our Doctors
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-12 col-lg-3">
                                 <h4 class="text-light mb-4 fw-normal">Contact</h4>
                                 <ul class="list-unstyled bx-ul">
                                     <li class="mb-2">
-                                        <a href="tel:8772510077" class="text-decoration-none text-light fs-6">
+                                        <a href="tel:0258050117" class="text-decoration-none text-light fs-6">
                                             <i class='bx bxs-phone bx-flip-horizontal bx-spin'></i>
-                                            <span>877-251-0077</span>
+                                            <span>(025) 805-0117</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="javascript:void(0)" class="text-decoration-none text-light fs-6">
                                             <i class='bx bxs-printer bx-flip-horizontal bx-spin'></i>
-                                            <span>888-444-0222</span>
+                                            <span>(025) 805-0116</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="mailto:support@meiracare.com" class="text-decoration-none text-light fs-6">
                                             <i class='bx bx-mail-send bx-flip-horizontal bx-spin'></i>
-                                            <span>support@meiracare.com</span>
+                                            <span>info@hero-healthcare.com</span>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="d-flex justify-content-around align-items-center mt-5">
-                                    <a href="https://www.facebook.com/MeiraCare" target="_blank" class="" title="Facebook">
+                                    <a href="https://www.facebook.com/hhcare" target="_blank" class="" title="Facebook">
                                         <i class='bx bxl-facebook-circle bx-lg'></i>
                                     </a>
-                                    <a href="https://twitter.com/MeiraCare" target="_blank" class="" title="Twitter">
+                                    <a href="https://twitter.com/hhcare" target="_blank" class="" title="Twitter">
                                         <i class='bx bxl-twitter bx-lg'></i>
                                     </a>
-                                    <a href="https://www.linkedin.com/company/65356174" target="_blank" class=""
+                                    <a href="https://www.linkedin.com/company/hhcare" target="_blank" class=""
                                         title="Linkedin">
                                         <i class='bx bxl-linkedin bx-lg'></i>
                                     </a>
@@ -127,10 +134,10 @@ const Footer = () => {
                                 <small>Copyright 2021. All Rights Reserved</small>
                             </div>
                             <div>
-                                <a class="text-light text-decoration-none fs-6" href="https://meiracare.com/terms-of-use">
+                                <a class="text-light text-decoration-none fs-6" href="#">
                                     <small>Terms of Use </small>
                                 </a> |
-                                <a class="text-light text-decoration-none fs-6" href="https://meiracare.com/privacy-policy">
+                                <a class="text-light text-decoration-none fs-6" href="#">
                                     <small>Privacy Policy</small>
                                 </a>
                             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = () => {
@@ -16,9 +17,14 @@ const Banner = () => {
                             <p class="py-1 animated slideInLeft delay-2s">The technology to connect, expertise you can
                                 trust and the power to improve health
                             </p>
-                            <button class="my-1 me-1 animated zoomIn delay-1s btn btn-lg btn-outline-secondary">Learn
-                                more</button>
-                            <button class="my-1 animated zoomIn delay-0.5s btn btn-lg btn-secondary">Contact us</button>
+                            <Link to="/about">
+                                <button class="my-1 me-1 animated zoomIn delay-1s btn btn-lg btn-outline-secondary">Learn
+                                    more</button>
+                            </Link>
+                            <Link to="/contact">
+                                <button class="my-1 animated zoomIn delay-0.5s btn btn-lg btn-secondary">Contact us</button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

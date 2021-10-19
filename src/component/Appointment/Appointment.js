@@ -5,12 +5,7 @@ const Appointment = () => {
         <>
             <section class="appointment-section p-5">
                 <div class="container">
-                    <h2 class="section-title lh-1 fs-1 pb-3 fw-normal text-center">Make an <b>Appointment</b></h2>
-                    <p class="fs-6 text-muted">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
-                        eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                        fugiat sit in iste officiis commodi quidem hic quas.</p>
-
+                    <h2 class="section-title lh-1 fs-1 pb-3 fw-normal text-center">Make an <b>Appointment</b> To Get Service</h2>
                     <form action="" method="" role="form" class="">
                         <div class="row">
                             <div class="col-md-4 form-group">
@@ -38,19 +33,14 @@ const Appointment = () => {
                             </div>
                             <div class="col-md-4 form-group mt-3">
                                 <select name="department" id="department" class="form-select">
-                                    <option value="">Select Department</option>
-                                    <option value="Department 1">Department 1</option>
-                                    <option value="Department 2">Department 2</option>
-                                    <option value="Department 3">Department 3</option>
-                                </select>
-                                <div class="validate"></div>
-                            </div>
-                            <div class="col-md-4 form-group mt-3">
-                                <select name="doctor" id="doctor" class="form-select">
-                                    <option value="">Select Doctor</option>
-                                    <option value="Doctor 1">Doctor 1</option>
-                                    <option value="Doctor 2">Doctor 2</option>
-                                    <option value="Doctor 3">Doctor 3</option>
+                                    <option value="">Select Services</option>
+                                    <option value="service1">Oxygen</option>
+                                    <option value="service2">Nursing for Home</option>
+                                    <option value="service3">Sample Collection</option>
+                                    <option value="service4">Order Ambulance</option>
+                                    <option value="service4">Medicine Supply</option>
+                                    <option value="service4">Acne</option>
+                                    <option value="service4">Others</option>
                                 </select>
                                 <div class="validate"></div>
                             </div>
@@ -60,9 +50,34 @@ const Appointment = () => {
                             <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
                             <div class="validate"></div>
                         </div>
-                        <button class="mt-3 d-block mx-auto btn btn-lg btn-outline-secondary" type="submit">Make an
-                            Appointment</button>
+                        <button class="mt-3 d-block mx-auto btn btn-lg btn-outline-secondary" type="submit">Request Service</button>
                     </form>
+
+                    <div class="mx-auto p-5">
+                        <p><strong>What do you need ?</strong></p>
+
+                        <ul>
+                            <li>Internet access.</li>
+                            <li>Smart Phone or Computer.</li>
+                            <li>For WhatsApp : For Android Smart Phones: Install WhatsApp from Google play store. For iPhone install WhatsApp from Apple App Store. A WhatsApp number will be given after the appointment is confirmed.</li>
+                        </ul>
+
+                        <p><strong>Easy Steps to do a Tele/Video Consultation from Anywhere</strong></p>
+
+                        <ul>
+                            <li>For telemedicine appointment you can call 10666 or 02 22 22 62 466</li>
+                            <li>After the initial appointment slot booking, you will need to pay in following ways:</li>
+                        </ul>
+
+                        <p>- By bKash mentioning his/her patient ID to 01914001264 (UHL Billing bKash Number)</p>
+
+                        <p>- By credit card, debit card, mobile banking, internet banking from payment.uhlbd.com</p>
+
+                        <ul>
+                            <li>Need to call to verify the payment. Unless payment is made 5-6 hours before telemedicine appointment time, appointment will not be confirmed</li>
+                            <li>Patient can send his/her Investigations prior to TM for doctor assessment to appointment@uhlbd.com</li>
+                        </ul>
+                    </div>
 
                 </div>
             </section>

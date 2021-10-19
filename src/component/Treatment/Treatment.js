@@ -25,9 +25,9 @@ const Treatment = () => {
                                 <p class="card-text fs-6">Birth control is a way to prevent pregnancy.There are many different
                                     methods of birth control, including hormonal contraception such as "the pill."</p>
                             </div>
-                            <div class="card-footer border-0 bg-white text-end">
+                            {/* <div class="card-footer border-0 bg-white text-end">
                                 <button class="btn btn-sm btn-outline-info text-secondary rounded-pill">More Details</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div class="col">
@@ -39,9 +39,9 @@ const Treatment = () => {
                                 <p class="card-text fs-6">ED is known as the inability to maintain an erection sufficient for
                                     satisfying sexual activity.</p>
                             </div>
-                            <div class="card-footer border-0 bg-white text-end">
+                            {/* <div class="card-footer border-0 bg-white text-end">
                                 <button class="btn btn-sm btn-outline-info text-secondary rounded-pill">More Details</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div class="col">
@@ -55,15 +55,15 @@ const Treatment = () => {
                                     point throughout their lives.It can appear as whiteheads, blackheads, papules, pustules, or
                                     nodules further beneath the skin.</p>
                             </div>
-                            <div class="card-footer border-0 bg-white text-end">
+                            {/* <div class="card-footer border-0 bg-white text-end">
                                 <button class="btn btn-sm btn-outline-info text-secondary rounded-pill">More Details</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
-                <button class="mt-4 animated zoomIn delay-1s btn btn-lg btn-outline-secondary d-block mx-auto">
+                {/* <button class="mt-4 animated zoomIn delay-1s btn btn-lg btn-outline-secondary d-block mx-auto">
                     All Treatements
-                </button>
+                </button> */}
             </section>
         </>
     );
