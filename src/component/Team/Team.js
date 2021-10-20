@@ -13,15 +13,15 @@ const Team = (props) => {
                     <span>{role}</span>
                     <div className="social">
                         {
-                            twitter && <a className="text-decoration-none" href="" target="_blank">
+                            twitter && <a className="text-decoration-none" href={twitter} target="_blank">
                                 <i className='bx bxl-twitter bx-tada'></i></a>
                         }
                         {
-                            facebook && <a className="text-decoration-none" href="" target="_blank">
+                            facebook && <a className="text-decoration-none" href={facebook} target="_blank">
                                 <i className='bx bxl-facebook-circle bx-tada'></i></a>
                         }
                         {
-                            linkedin && <a className="text-decoration-none" href="" target="_blank">
+                            linkedin && <a className="text-decoration-none" href={linkedin} target="_blank">
                                 <i className='bx bxl-linkedin bx-tada'></i></a>}
                     </div>
                 </div>
