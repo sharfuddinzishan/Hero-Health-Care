@@ -1,6 +1,8 @@
 # Hero Health Care 
 
-This is Full Complete Project Based On react js [Click here for LIve Site Link](https://hero-health-care-hhc.firebaseapp.com/).
+This is Full Complete Project Based On react js [Click here for LIve Site Firebase Link](https://hero-health-care-hhc.firebaseapp.com/).
+
+[Click here for Netlify Link](https://hero-health-care-hhc.netlify.app/).
 
 
 # Featured of this project
