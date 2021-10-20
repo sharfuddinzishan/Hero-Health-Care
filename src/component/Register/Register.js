@@ -6,7 +6,8 @@ import { useHistory, useLocation } from 'react-router';
 
 initialization();
 const Register = () => {
-    const { createUser, error, setError } = useAuth();
+    const { createUser, setUserFullName, error, setError } = useAuth();
+    const [userName, setUserName] = useState();
     const [email, setEmail] = useState();
     const [pass, setPass] = useState();
     const location = useLocation();
@@ -14,9 +15,9 @@ const Register = () => {
     const redirect_uri = location.state?.from || '/home';
 
     const handleInput = e => {
-        // if (e.target.type === 'text')
-        //     user['displayName'] = e.target.value
-        if (e.target.type === 'email')
+        if (e.target.type === 'text')
+            setUserName(e.target.value)
+        else if (e.target.type === 'email')
             setEmail(e.target.value)
         else
             setPass(e.target.value)
@@ -24,8 +25,9 @@ const Register = () => {
 
     const handleRegistrationForm = (e) => {
         e.preventDefault();
-        createUser(email, pass)
+        createUser(email, pass, userName)
             .then((response) => {
+                setUserFullName(userName)
                 setError('');
                 history.push(redirect_uri)
             })
@@ -39,10 +41,10 @@ const Register = () => {
                 <h1 className="text-center text-light">Register Here</h1>
                 {error?.length ? <p className="h6 text-muted">{error}</p> : ''}
                 <form onSubmit={handleRegistrationForm}>
-                    {/* <div className="mb-3">
+                    <div className="mb-3">
                         <label className="form-label">Name</label>
                         <input onChange={handleInput} type="text" className="form-control" />
-                    </div> */}
+                    </div>
                     <div className="mb-3">
                         <label className="form-label">Email address</label>
                         <input onChange={handleInput} type="email" className="form-control" required />

@@ -10,6 +10,7 @@ This is Full Complete Project Based On react js [Click here for LIve Site Link](
 3. To get service details also need to login
 4. Doctor list only showed to register user
 5. Have Google Sign in system
+6. Display User Name In Header, if user have name otherwise show Anonymous User
 
 ## Topics Covered 
 
