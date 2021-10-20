@@ -7,7 +7,7 @@ This is Full Complete Project Based On react js [Click here for LIve Site Fireba
 
 # Featured of this project
 
-1. User can order medicine, get home visit, online consultancy from here by submitting a request form
+1. User can order medicine, get home visit to collect sample, online consultancy from here by submitting a request form
 2. To make service request, user have to logged into system
 3. To get service details also need to login
 4. Doctor list only showed to register user
