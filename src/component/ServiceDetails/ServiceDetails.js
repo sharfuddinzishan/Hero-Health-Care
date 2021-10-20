@@ -15,7 +15,7 @@ const ServiceDetails = () => {
         <>
             <div className="container p-5">
 
-                <h2 className="section-title lh-1 fs-1 pb-3 fw-normal text-center">{title}</h2>
+                <h2 className="section-title lh-1 fs-1 pb-3 fw-normal text-center text-uppercase">{title}</h2>
                 <p className="text-muted text-center pb-5">{info}</p>
                 <div className="row">
                     <div className="col-md-4">

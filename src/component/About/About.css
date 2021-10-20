@@ -1,3 +1,14 @@
 .single-aim {
     height: 200px;
+    overflow: hidden;
+}
+.single-aim:hover {
+    background-color: azure;
+    cursor:none;
+}
+
+@media only screen and (min-width: 300px) and (max-width:450px) {
+    .single-aim {
+        height: 300px;
+    }
 }

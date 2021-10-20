@@ -1,21 +1,21 @@
 import React from 'react';
-
+import './OurSolutions.css'
 const OurSolutions = () => {
     return (
         <>
             <section className="solutions-section p-5">
                 <div className="container">
-                    <h5 className="section-title lh-1 fs-1 py-3 fw-normal text-center">
+                    <h5 className="section-title lh-1 fs-1 py-3 fw-normal text-start text-md-center">
                         Our&nbsp;<b>Solutions</b>
                     </h5>
-                    <p className="py-1 w-75 mx-auto text-center text-muted fs-6">Hero Health Care (HHC) is the world’s only integrated
+                    <p className="py-1 text-center text-muted fs-6">Hero Health Care (HHC) is the world’s only integrated
                         virtual care system for delivering, enabling
                         and empowering whole-person health—from wellness and prevention to acute care to complex
                         healthcare needs.
                     </p>
                 </div>
-                <div className="row gy-3 container">
-                    <div className="col-md-4">
+                <div className="row gy-3">
+                    <div className="col-12 col-md-4">
                         <div className="card h-100">
                             <img src="https://images.ctfassets.net/l3v9j0ltz3yi/6IZi7Gizd9qAnfAYRIkNzB/6d8e0472f0eb8fa20c5d6a2e25cf9b38/image6.jpg"
                                 className="card-img-top w-100 h-25" alt="..." />
@@ -32,7 +32,7 @@ const OurSolutions = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-12 col-md-4">
                         <div className="card h-100">
                             <img src="https://images.ctfassets.net/l3v9j0ltz3yi/7lInRAMPoxQQ5HySLyM3Dh/bee3e2589583ef8fb01f285915c10989/image1.jpg"
                                 className="card-img-top  w-100 h-25" alt="..." />
@@ -50,7 +50,7 @@ const OurSolutions = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-12 col-md-4">
                         <div className="card h-100">
                             <img src="https://images.ctfassets.net/l3v9j0ltz3yi/3QATTSMFQzs4IbsN3wmL7A/ac250db6fae77c37a672d3a8b4103206/image2.jpg"
                                 className="card-img-top w-100 h-25" alt="..." />

@@ -14,10 +14,11 @@ const Contact = () => {
                     </div>
                     <div className="row">
                         <div className="col-md-6 d-flex flex-column flex-start">
-                            <div className="">
+                            <div className="text-center">
                                 <iframe
+                                    className="h-100 w-75"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.02320989354!2d91.81987779827575!3d22.358885690328034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd890077a1037%3A0x94257c5a16e348c5!2sCentral%20Plaza!5e0!3m2!1sen!2sbd!4v1634591053097!5m2!1sen!2sbd"
-                                    width="400" height="400" style={{ border: 0 }} allowfullscreen="" loading="lazy"></iframe>
+                                    allowfullscreen="" loading="lazy"></iframe>
                             </div>
                             <div className="info mt-2 d-flex flex-column">
                                 <div className="address d-flex align-items-center">

@@ -1,0 +1,9 @@
+
+@media only screen and (max-width:300px) {
+    .solutions-section .card{
+        width: 170px;
+    }
+    .solutions-section .card-text{
+        font-size: xx-small;
+    }
+}

@@ -53,30 +53,34 @@ const Appointment = () => {
                         <button className="mt-3 d-block mx-auto btn btn-lg btn-outline-secondary" type="submit">Request Service</button>
                     </form>
 
-                    <div className="mx-auto p-5">
-                        <p><strong>What do you need ?</strong></p>
+                    <div className="row mt-4">
+                        <div className="col">
+                            <div className="mx-auto fs-6">
+                                <p><strong>What do you need ?</strong></p>
 
-                        <ul>
-                            <li>Internet access.</li>
-                            <li>Smart Phone or Computer.</li>
-                            <li>For WhatsApp : For Android Smart Phones: Install WhatsApp from Google play store. For iPhone install WhatsApp from Apple App Store. A WhatsApp number will be given after the appointment is confirmed.</li>
-                        </ul>
+                                <ul>
+                                    <li>Internet access.</li>
+                                    <li>Smart Phone or Computer.</li>
+                                    <li>For WhatsApp : For Android Smart Phones: Install WhatsApp from Google play store. For iPhone install WhatsApp from Apple App Store. A WhatsApp number will be given after the appointment is confirmed.</li>
+                                </ul>
 
-                        <p><strong>Easy Steps to do a Tele/Video Consultation from Anywhere</strong></p>
+                                <p><strong>Easy Steps to do a Tele/Video Consultation from Anywhere</strong></p>
 
-                        <ul>
-                            <li>For telemedicine appointment you can call 10666 or 02 22 22 62 466</li>
-                            <li>After the initial appointment slot booking, you will need to pay in following ways:</li>
-                        </ul>
+                                <ul>
+                                    <li>For telemedicine appointment you can call 10666 or 02 22 22 62 466</li>
+                                    <li>After the initial appointment slot booking, you will need to pay in following ways:</li>
+                                </ul>
 
-                        <p>- By bKash mentioning his/her patient ID to 01914001264 (UHL Billing bKash Number)</p>
+                                <p>- By bKash mentioning his/her patient ID to 01914001264 (UHL Billing bKash Number)</p>
 
-                        <p>- By credit card, debit card, mobile banking, internet banking from payment.uhlbd.com</p>
+                                <p>- By credit card, debit card, mobile banking, internet banking from payment.uhlbd.com</p>
 
-                        <ul>
-                            <li>Need to call to verify the payment. Unless payment is made 5-6 hours before telemedicine appointment time, appointment will not be confirmed</li>
-                            <li>Patient can send his/her Investigations prior to TM for doctor assessment to appointment@uhlbd.com</li>
-                        </ul>
+                                <ul>
+                                    <li>Need to call to verify the payment. Unless payment is made 5-6 hours before telemedicine appointment time, appointment will not be confirmed</li>
+                                    <li>Patient can send his/her Investigations prior to TM for doctor assessment to appointment@uhlbd.com</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

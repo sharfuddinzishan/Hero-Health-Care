@@ -23,7 +23,7 @@ const Statistics = () => {
                     <div className="col-6 col-md-3 item d-flex flex-column align-items-start">
                         <span className="fw-bold display-1 lh-1 text-success">+</span>
                         <span className="fw-bold fs-3 lh-1">51.5M</span>
-                        <span className="fw-bold fs-5 lh-1">U.S. paid members</span>
+                        <span className="fw-bold fs-5 lh-1">paid members</span>
                     </div>
 
                     <div className="col-6 col-md-3 item d-flex flex-column align-items-start">

@@ -18,23 +18,18 @@ const About = () => {
                         </p>
                         <ul className="nav justify-content-end social-medie">
                             <li className="px-2">
-                                <a href="#">
+                                <a href="https://www.facebook.com/hhcare" target="_blank">
                                     <i className="fa fa-facebook"> </i>
                                 </a>
                             </li>
                             <li className="px-2">
-                                <a href="#">
-                                    <i className="fa fa-youtube"> </i>
-                                </a>
-                            </li>
-                            <li className="px-2">
-                                <a href="#">
+                                <a href="https://www.twitter.com/hhcare" target="_blank">
                                     <i className="fa fa-twitter"> </i>
                                 </a>
                             </li>
                             <li className="px-2">
-                                <a href="#">
-                                    <i className="fa fa-google"> </i>
+                                <a href="https://www.linkedin.com/hhcare" target="_blank">
+                                    <i className="fa fa-linkedin"> </i>
                                 </a>
                             </li>
 
@@ -51,7 +46,7 @@ const About = () => {
                             <div className="p-3">
                                 <h2 className="section-title lh-1 fs-1 pb-3 fw-normal">Who <b>We Are</b></h2>
                                 <p className="text-muted fs-6 text-start">
-                                    We provide care for about 15,000 patients living across London of all age groups with a
+                                    We provide care for about 15,000 patients living across of all age groups with a
                                     variety of health conditions.Some of our patients have multiple and complex health
                                     problems.
                                     <br /><br />
@@ -63,12 +58,12 @@ const About = () => {
                         </div>
                         <div className="col-md-6">
                             <img className="img-fluid"
-                                src="https://virtually.healthcare/wp-content/uploads/2020/11/Group-770-449x456.png" alt="" />
+                                src="https://i.ibb.co/Db9F2G3/Group-770-449x456.png" alt="" />
                         </div>
                         <hr className="my-3" />
                         <div className="col-md-6">
                             <img className="img-fluid"
-                                src="https://virtually.healthcare/wp-content/uploads/2020/11/Group-707-528x430.png" alt="" />
+                                src="https://i.ibb.co/T8ynxjV/Group-707-528x430.png" alt="" />
                         </div>
                         <div className="col-md-6">
                             <div className="p-3">
@@ -102,7 +97,7 @@ const About = () => {
                                 <h4 className="lh-lg mt-1">Our Essence</h4>
                                 <p className="fs-6 text-muted">
                                     <small>
-                                        At our core, Meira Care operates on empathy, compassion, inclusivity, and impact.We are
+                                        At our core, HHCare operates on empathy, compassion, inclusivity, and impact.We are
                                         about people and genuine care is provided by people and exists to help people.
                                     </small>
                                 </p>
@@ -114,7 +109,7 @@ const About = () => {
                                 <p className="fs-6 text-muted">
                                     <small>
                                         To shape the future of healthcare delivery by providing convenient and accessible
-                                        healthcare to every Ontario resident.
+                                        healthcare to every resident.
                                     </small>
                                 </p>
                             </div>

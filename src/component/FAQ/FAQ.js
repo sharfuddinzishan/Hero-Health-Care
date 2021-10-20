@@ -89,7 +89,7 @@ const FAQ = () => {
                                         <div className="accordion-body">
                                             <small>
                                                 If you are experiencing any issues when setting up or connecting to your virtual
-                                                appointment, please contact us via email at <code>support@meiracare.com</code>
+                                                appointment, please contact us via email at <code>support@hhcare.com</code>
                                             </small>
                                         </div>
                                     </div>

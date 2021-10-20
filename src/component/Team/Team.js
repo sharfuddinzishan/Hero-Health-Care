@@ -5,29 +5,33 @@ const Team = (props) => {
     const { thumbImage: thumbPic } = picture || {}
     const { mobile, email, socialLink: { facebook, twitter, linkedin } } = contact || {}
     return (
-        <div className="col-lg-6">
-            <div className="member d-flex align-items-start">
-                <div className="pic"><img src={thumbPic} className="img-fluid" alt={name || "No Profile Picture Available"} /></div>
-                <div className="member-info">
-                    <h4>{name}</h4>
-                    <span>{role}</span>
-                    <div className="social">
-                        {
-                            twitter && <a className="text-decoration-none" href={twitter} target="_blank">
-                                <i className='bx bxl-twitter bx-tada'></i></a>
-                        }
-                        {
-                            facebook && <a className="text-decoration-none" href={facebook} target="_blank">
-                                <i className='bx bxl-facebook-circle bx-tada'></i></a>
-                        }
-                        {
-                            linkedin && <a className="text-decoration-none" href={linkedin} target="_blank">
-                                <i className='bx bxl-linkedin bx-tada'></i></a>}
+        <>
+            <div className="col">
+                <div className="card h-100">
+                    <img src={thumbPic} className="card-img-top img-fluid w-50 mx-auto p-2" alt="..." />
+                    <div className="card-body">
+                        <small className="card-title">{name}</small><br />
+                        <small className="text-center fw-bold d-inline-block mb-3">{role}</small>
+                        <p className="fs-6 text-muted">{email[0]}</p>
+                        <p className="fs-6 text-muted">{mobile[0]}</p>
+                        <div className="social">
+                            {
+                                twitter && <a className=" me-1 text-decoration-none" href={twitter} target="_blank">
+                                    <i className='bx bxl-twitter bx-tada'></i></a>
+                            }
+                            {
+                                facebook && <a className="me-1 text-decoration-none" href={facebook} target="_blank">
+                                    <i className='bx bxl-facebook-circle bx-tada'></i></a>
+                            }
+                            {
+                                linkedin && <a className="me-1 text-decoration-none" href={linkedin} target="_blank">
+                                    <i className='bx bxl-linkedin bx-tada'></i></a>}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        </>
+    )
 };
 
 export default Team;
