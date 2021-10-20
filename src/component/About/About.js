@@ -18,17 +18,17 @@ const About = () => {
                         </p>
                         <ul className="nav justify-content-end social-medie">
                             <li className="px-2">
-                                <a href="https://www.facebook.com/hhcare" target="_blank">
+                                <a href="https://www.facebook.com/hhcare" target="_blank" rel="noreferrer">
                                     <i className="fa fa-facebook"> </i>
                                 </a>
                             </li>
                             <li className="px-2">
-                                <a href="https://www.twitter.com/hhcare" target="_blank">
+                                <a href="https://www.twitter.com/hhcare" target="_blank" rel="noreferrer">
                                     <i className="fa fa-twitter"> </i>
                                 </a>
                             </li>
                             <li className="px-2">
-                                <a href="https://www.linkedin.com/hhcare" target="_blank">
+                                <a href="https://www.linkedin.com/hhcare" target="_blank" rel="noreferrer">
                                     <i className="fa fa-linkedin"> </i>
                                 </a>
                             </li>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
+    // Destructuring
     const { _id: serviceID, title, info, service_image: serviceImg } = props.service || {}
     // Generate ServiceDetails URL 
     const detailsPagePath = `/services/${serviceID}`

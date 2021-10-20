@@ -1,15 +1,25 @@
-import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
 import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from './../../Hooks/useAuth';
 
 const Login = () => {
-    const { signInGoogle, signInEmailPass, error, setError, user } = useAuth();
+    // Retrieved firebase methos, state from custom hook
+    const { signInGoogle, signInEmailPass, error, setError } = useAuth();
+    const [mail, setMail] = useState();
+    const [password, setPassword] = useState();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
 
+    // Get Input Values
+    const handleInput = e => {
+        if (e.target.type === 'email')
+            setMail(e.target.value)
+        else
+            setPassword(e.target.value)
+    }
 
+    // Google POP up login 
     const handleGoogleLogin = () => {
         signInGoogle()
             .then(() => {
@@ -20,16 +30,8 @@ const Login = () => {
                 history.push(redirect_uri);
             })
     }
-    const [mail, setMail] = useState();
-    const [password, setPassword] = useState();
 
-    const handleInput = e => {
-        if (e.target.type === 'email')
-            setMail(e.target.value)
-        else
-            setPassword(e.target.value)
-    }
-
+    // Handle login form with given password and email 
     const handleLoginForm = (e) => {
         e.preventDefault();
         signInEmailPass(mail, password)

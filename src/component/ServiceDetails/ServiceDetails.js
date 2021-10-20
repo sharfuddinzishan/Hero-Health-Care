@@ -5,10 +5,12 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
 const ServiceDetails = () => {
-    // get serviceID from url 
+    // get serviceID from path of url route
     const { serviceID } = useParams();
     const [services] = useServicesDetails();
+    // Retrived matched service from json with parameter of serviceID 
     const getSingleServiceInfo = services?.find(service => service._id === Number(serviceID))
+    // Destructuring matched service info 
     const { title, info, description, service_image: serviceImage } = getSingleServiceInfo || {}
 
     return (

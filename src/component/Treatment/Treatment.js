@@ -25,9 +25,6 @@ const Treatment = () => {
                                 <p className="card-text fs-6">Birth control is a way to prevent pregnancy.There are many different
                                     methods of birth control, including hormonal contraception such as "the pill."</p>
                             </div>
-                            {/* <div className="card-footer border-0 bg-white text-end">
-                                <button className="btn btn-sm btn-outline-info text-secondary rounded-pill">More Details</button>
-                            </div> */}
                         </div>
                     </div>
                     <div className="col">
@@ -39,9 +36,6 @@ const Treatment = () => {
                                 <p className="card-text fs-6">ED is known as the inability to maintain an erection sufficient for
                                     satisfying sexual activity.</p>
                             </div>
-                            {/* <div className="card-footer border-0 bg-white text-end">
-                                <button className="btn btn-sm btn-outline-info text-secondary rounded-pill">More Details</button>
-                            </div> */}
                         </div>
                     </div>
                     <div className="col">
@@ -55,9 +49,6 @@ const Treatment = () => {
                                     point throughout their lives.It can appear as whiteheads, blackheads, papules, pustules, or
                                     nodules further beneath the skin.</p>
                             </div>
-                            {/* <div className="card-footer border-0 bg-white text-end">
-                                <button className="btn btn-sm btn-outline-info text-secondary rounded-pill">More Details</button>
-                            </div> */}
                         </div>
                     </div>
                 </div>

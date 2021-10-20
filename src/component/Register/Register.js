@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import initialization from './../../firebase/firebaseInitialize';
-import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import useAuth from '../../Hooks/useAuth';
 import { useHistory, useLocation } from 'react-router';
 
 initialization();
 const Register = () => {
+    // Get Firebase settings  from custom hook
     const { createUser, setUserFullName, error, setError } = useAuth();
     const [userName, setUserName] = useState();
     const [email, setEmail] = useState();
@@ -14,6 +14,7 @@ const Register = () => {
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
 
+    // Get Input Values from registration field 
     const handleInput = e => {
         if (e.target.type === 'text')
             setUserName(e.target.value)
@@ -26,7 +27,8 @@ const Register = () => {
     const handleRegistrationForm = (e) => {
         e.preventDefault();
         createUser(email, pass, userName)
-            .then((response) => {
+            .then(() => {
+                // Update user by providing nrewly registerd person name 
                 setUserFullName(userName)
                 setError('');
                 history.push(redirect_uri)

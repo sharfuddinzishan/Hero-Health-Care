@@ -16,9 +16,10 @@ const Contact = () => {
                         <div className="col-md-6 d-flex flex-column flex-start">
                             <div className="text-center">
                                 <iframe
+                                    title="HHCare"
                                     className="h-100 w-75"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.02320989354!2d91.81987779827575!3d22.358885690328034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd890077a1037%3A0x94257c5a16e348c5!2sCentral%20Plaza!5e0!3m2!1sen!2sbd!4v1634591053097!5m2!1sen!2sbd"
-                                    allowfullscreen="" loading="lazy"></iframe>
+                                    loading="lazy"></iframe>
                             </div>
                             <div className="info mt-2 d-flex flex-column">
                                 <div className="address d-flex align-items-center">
@@ -49,33 +50,33 @@ const Contact = () => {
                         <div className="col-md-6">
                             <form action="" className="row g-3">
                                 <div className="col-md-6">
-                                    <label for="inputEmail4" className="form-label col-form-label-sm">Email</label>
+                                    <label className="form-label col-form-label-sm">Email</label>
                                     <input type="email" className="form-control form-control-sm" id="inputEmail4" />
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="inputPassword4" className="form-label col-form-label-sm">Password</label>
+                                    <label className="form-label col-form-label-sm">Password</label>
                                     <input type="password" className="form-control form-control-sm" id="inputPassword4" />
                                 </div>
                                 <div className="col-12">
-                                    <label for="inputMobile" className="form-label col-form-label-sm">Mobile</label>
+                                    <label className="form-label col-form-label-sm">Mobile</label>
                                     <input type="phone" className="form-control form-control-sm" id="inputMobile" />
                                 </div>
                                 <div className="col-12">
-                                    <label for="inputAddress" className="form-label col-form-label-sm">Address</label>
+                                    <label className="form-label col-form-label-sm">Address</label>
                                     <input type="text" className="form-control form-control-sm" id="inputAddress"
                                         placeholder="1234 Main St" />
                                 </div>
                                 <div className="col-12">
-                                    <label for="inputAddress2" className="form-label col-form-label-sm">Address 2</label>
+                                    <label className="form-label col-form-label-sm">Address 2</label>
                                     <input type="text" className="form-control form-control-sm" id="inputAddress2"
                                         placeholder="Apartment, studio, or floor" />
                                 </div>
                                 <div className="col-md-6">
-                                    <label for="inputCity" className="form-label col-form-label-sm">City</label>
+                                    <label className="form-label col-form-label-sm">City</label>
                                     <input type="text" className="form-control form-control-sm" id="inputCity" />
                                 </div>
                                 <div className="col-md-2">
-                                    <label for="inputZip" className="form-label col-form-label-sm">Zip</label>
+                                    <label className="form-label col-form-label-sm">Zip</label>
                                     <input type="text" className="form-control form-control-sm" id="inputZip" />
                                 </div>
                                 <div className="col-md-12">
@@ -84,7 +85,7 @@ const Contact = () => {
                                 <div className="col-12">
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                        <label className="form-check-labelm" for="gridCheck">
+                                        <label className="form-check-labelm">
                                             Subscribe To Newsletter
                                         </label>
                                     </div>

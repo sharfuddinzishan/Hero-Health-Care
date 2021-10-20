@@ -16,7 +16,7 @@ const NotFound = () => {
                                 Page</button>
                         </div>
                         <div className="col-md-5">
-                            <img src="https://www.getmaple.ca/site-content/uploads/2018/05/img_couch@2x.png"
+                            <img src="https://i.ibb.co/GJh6j8k/img-couch-2x.png"
                                 className="w-100 img-fluid" alt="" />
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Header.css'
 const Header = () => {
+    // Retrieved firebase methos, state from custom hook
     const { user, logOut } = useAuth();
     return (
         <>
@@ -26,7 +27,7 @@ const Header = () => {
                                     <Link className="nav-link" to="/services">Services</Link>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Who We Are
                                     </a>
@@ -80,6 +81,7 @@ const Header = () => {
                                                     LogOut
                                                 </NavLink>
                                             </li>
+                                            {/* Display User name if provided otherwise show anonymousUser  */}
                                             <li className="nav-item">
                                                 <Link className="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">
                                                     {user?.displayName ? user.displayName : 'AnonymousUser'}

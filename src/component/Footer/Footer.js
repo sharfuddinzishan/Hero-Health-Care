@@ -23,7 +23,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-lg-4 mb-4 mb-lg-0">
-                                <a href="/" target="_blank" className="d-inline-block mb-5">
+                                <a href="/" target="_blank" rel="noreferrer" className="d-inline-block mb-5">
                                     <img src="https://i.ibb.co/HnBMB8F/hhc-logo.png"
                                         className="img-fluid" alt="footer-logo" width="220" />
                                 </a>
@@ -35,11 +35,11 @@ const Footer = () => {
                                 <div className="d-flex align-items-center justify-content-around justify-content-lg-none mb-3">
                                     <a className="me-2"
                                         href="/"
-                                        target="_blank">
+                                        target="_blank" rel="noreferrer">
                                         <img src="https://meiracare.com/template/assets/images/app-store.webp"
                                             alt="App Store Download" width="100" />
                                     </a>
-                                    <a href="/" target="_blank">
+                                    <a href="/" target="_blank" rel="noreferrer">
                                         <img src="https://meiracare.com/template/assets/images/google-play.webp"
                                             alt="Google Play Store Download" width="100" />
                                     </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                                         </a>
                                     </li>
                                     <li className="mb-2">
-                                        <a href="javascript:void(0)" className="text-decoration-none text-light fs-6">
+                                        <a href="/" className="text-decoration-none text-light fs-6">
                                             <i className='bx bxs-printer bx-flip-horizontal bx-spin'></i>
                                             <span>(025) 805-0116</span>
                                         </a>
@@ -108,13 +108,13 @@ const Footer = () => {
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-around align-items-center mt-5">
-                                    <a href="https://www.facebook.com/hhcare" target="_blank" className="" title="Facebook">
+                                    <a href="https://www.facebook.com/hhcare" target="_blank" rel="noreferrer" className="" title="Facebook">
                                         <i className='bx bxl-facebook-circle bx-lg'></i>
                                     </a>
-                                    <a href="https://twitter.com/hhcare" target="_blank" className="" title="Twitter">
+                                    <a href="https://twitter.com/hhcare" target="_blank" rel="noreferrer" className="" title="Twitter">
                                         <i className='bx bxl-twitter bx-lg'></i>
                                     </a>
-                                    <a href="https://www.linkedin.com/company/hhcare" target="_blank" className=""
+                                    <a href="https://www.linkedin.com/company/hhcare" target="_blank" rel="noreferrer" className=""
                                         title="Linkedin">
                                         <i className='bx bxl-linkedin bx-lg'></i>
                                     </a>
@@ -134,10 +134,10 @@ const Footer = () => {
                                 <small>Copyright 2021. All Rights Reserved</small>
                             </div>
                             <div>
-                                <a className="text-light text-decoration-none fs-6" href="#">
+                                <a className="text-light text-decoration-none fs-6" href="/">
                                     <small>Terms of Use </small>
                                 </a> |
-                                <a className="text-light text-decoration-none fs-6" href="#">
+                                <a className="text-light text-decoration-none fs-6" href="/">
                                     <small>Privacy Policy</small>
                                 </a>
                             </div>

@@ -15,11 +15,11 @@ const Review = () => {
                             <div className="d-flex align-items-center justify-content-around justify-content-lg-none mb-3">
                                 <a className="me-2"
                                     href="https://apps.apple.com/ca/app/hero-health-clinic/id1549037621#?platform=iphone"
-                                    target="_blank">
+                                    target="_blank" rel="noreferrer">
                                     <img src="https://i.ibb.co/R0WT1tW/app-store.webp"
                                         alt="App Store Download" width="100" />
                                 </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.hhcare.app" target="_blank">
+                                <a href="https://play.google.com/store/apps/details?id=com.hhcare.app" target="_blank" rel="noreferrer">
                                     <img src="https://i.ibb.co/1TKLTd0/google-play.webp"
                                         alt="Google Play Store Download" width="100" />
                                 </a>

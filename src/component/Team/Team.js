@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Team = (props) => {
-    const { name, year_of_experience: experience, role, picture, contact, } = props.team || {}
+    // Destructuring team, picture, contact 
+    const { name, role, picture, contact, } = props.team || {}
     const { thumbImage: thumbPic } = picture || {}
     const { mobile, email, socialLink: { facebook, twitter, linkedin } } = contact || {}
     return (
@@ -16,15 +17,15 @@ const Team = (props) => {
                         <p className="fs-6 text-muted">{mobile[0]}</p>
                         <div className="social">
                             {
-                                twitter && <a className=" me-1 text-decoration-none" href={twitter} target="_blank">
+                                twitter && <a className=" me-1 text-decoration-none" href={twitter} target="_blank" rel="noreferrer">
                                     <i className='bx bxl-twitter bx-tada'></i></a>
                             }
                             {
-                                facebook && <a className="me-1 text-decoration-none" href={facebook} target="_blank">
+                                facebook && <a className="me-1 text-decoration-none" href={facebook} target="_blank" rel="noreferrer">
                                     <i className='bx bxl-facebook-circle bx-tada'></i></a>
                             }
                             {
-                                linkedin && <a className="me-1 text-decoration-none" href={linkedin} target="_blank">
+                                linkedin && <a className="me-1 text-decoration-none" href={linkedin} target="_blank" rel="noreferrer">
                                     <i className='bx bxl-linkedin bx-tada'></i></a>}
                         </div>
                     </div>

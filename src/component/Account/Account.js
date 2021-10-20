@@ -5,7 +5,9 @@ import Reset from './../Reset/Reset';
 
 
 function Account() {
+    // By Default Tooggle means Registration form appear when user click on Account menu 
     const [toggle, setToggle] = useState(false);
+    // To Get Reset Form of email 
     const [reset, setReset] = useState(false);
 
     return (

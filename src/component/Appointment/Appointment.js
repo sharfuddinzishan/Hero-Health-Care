@@ -6,7 +6,7 @@ const Appointment = () => {
             <section className="appointment-section p-5">
                 <div className="container">
                     <h2 className="section-title lh-1 fs-1 pb-3 fw-normal text-center">Make an <b>Appointment</b> To Get Service</h2>
-                    <form action="" method="" role="form" className="">
+                    <form action="" method="">
                         <div className="row">
                             <div className="col-md-4 form-group">
                                 <input type="text" name="name" className="form-control" id="name" placeholder="Your Name"

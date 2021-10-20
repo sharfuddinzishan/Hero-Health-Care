@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Services.css';
 import { useServices } from './../../Hooks/useServices';
 import Service from '../Service/Service';
 const Services = () => {
+    // Retrived All Services from JSON file with custom hook useServices
     const [services] = useServices();
     return (
         <>
